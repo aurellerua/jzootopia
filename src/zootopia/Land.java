@@ -10,15 +10,16 @@ package zootopia;
  *
  * @author Thea Olivia
  */
-public class Cell {
-	int x;
-	int y;
+public class Land extends Cell {
+	static char land = 'l';
+	static int x;
+	static int y;
 	static char val = '\0';
 
-	// public Cell(int _x, int _y) {
+	// public Land(int _x, int _y) {
 	// 	x = _x;
 	// 	y = _y;
-	// 	val = '\0';
+	// 	val = land;
 	// }
 
 	public int getX() {
@@ -28,7 +29,8 @@ public class Cell {
 	public int getY() {
 		return y;
 	}
+	
 	public char getChar() {
-		return val;
+		return land;
 	}
 }

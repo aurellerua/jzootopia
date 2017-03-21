@@ -12,8 +12,14 @@ package zootopia;
  */
 public class Zoo {
 	Cell c;
-	public Zoo()
-	{
 
+	public Zoo(int x, int y)
+	{
+		Cell[][] cell = new Cell[x][y];
+		for (int i=0; i<x; i++) {
+			for (int j=0; j<y; j++) {
+				cell[i][j] = new Cell(x,y,val);
+			}
+		}
 	}
 }

@@ -17,6 +17,10 @@ public class Zootopia {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Cage<Land> cageland = new Cage<Land>();
+
+        cageland.add(new Land());
+        System.out.printf("Check land :%d\n\n", cageland.getCell());
     }
     
 }
