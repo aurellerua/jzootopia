@@ -11,5 +11,12 @@ package zootopia;
  * @author Aurelia
  */
 public abstract class LandWaterAnimal extends Animal {
+    public LandWaterAnimal() {
+        habitat = new char[2];
+        habitat[0] = 'l';
+        habitat[1] = 'w';
+    }
     
+    public abstract void berjalan();
+    public abstract void berenang();
 }

@@ -11,5 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public abstract class WaterAnimal extends Animal {
+    public WaterAnimal() {
+        habitat = new char[2];
+        habitat[0] = 'w';
+        habitat[1] = '\0';
+    }
     
+    public abstract void berenang();
 }

@@ -16,7 +16,7 @@ public abstract class Animal {
     protected char jenisMakanan;
     protected boolean isLiar;
     protected Point lokasi;
-    protected char habitat[];
+    protected char[] habitat;
     
     
     public int getBeratBadan() {

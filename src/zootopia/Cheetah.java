@@ -11,15 +11,29 @@ package zootopia;
  * @author Aurelia
  */
 public class Cheetah extends LandAnimal {
+    
+    public Cheetah(int x, int y) {
+        super();
+        beratBadan = 20;
+        jenisMakanan = 'k';
+        isLiar = true;
+        lokasi = new Point(x,y);
+    }
 
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("x");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("suara cheetah");
     }
-    
+
+    @Override
+    public void berjalan() {
+        getLokasi().move(1,1);
+    }
+
 }
+

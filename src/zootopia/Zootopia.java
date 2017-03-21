@@ -16,6 +16,15 @@ public class Zootopia {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Cheetah c = new Cheetah(1,1);
+        
+        c.berjalan();
+        c.bersuara();
+        if (c.isHabitat('l')) {
+            System.out.println("this is land animal");
+        }
+        System.out.println(c.getLokasi().getX());
+        System.out.println("done");
         // TODO code application logic here
     }
     
