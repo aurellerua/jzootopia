@@ -10,17 +10,14 @@ package zootopia;
  *
  * @author Thea Olivia
  */
-public class Renderable {
+public class Cage<Cell> {
+	private Cell c;
 
-	public Renderable() {
-
+	public void add (Cell c) {
+		this.c = c;
 	}
 
-	public void printZoo() {
-		System.out.println("zoo");
-	}
-
-	public char decode() {
-
+	public Cell getCell() {
+		return c;
 	}
 }
