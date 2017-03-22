@@ -18,6 +18,7 @@ public class Dove extends FlyingAnimal {
         jenisMakanan = 'o';
         isLiar = false;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override

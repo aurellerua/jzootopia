@@ -18,6 +18,7 @@ public class Lion extends LandAnimal {
         jenisMakanan = 'k';
         isLiar = true;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override

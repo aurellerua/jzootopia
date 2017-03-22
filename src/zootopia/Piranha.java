@@ -18,6 +18,7 @@ public class Piranha extends WaterAnimal {
         jenisMakanan = 'k';
         isLiar = true;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override
