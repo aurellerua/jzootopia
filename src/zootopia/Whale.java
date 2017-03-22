@@ -8,23 +8,31 @@ package zootopia;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
 public class Whale extends WaterAnimal {
 
+    public Whale(int x, int y) {
+        super();
+        beratBadan = 50000;
+        jenisMakanan = 'k';
+        isLiar = true;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("W");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("La, I'm a whale.");
     }
 
     @Override
     public void berenang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }

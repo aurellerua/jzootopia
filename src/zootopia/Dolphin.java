@@ -8,23 +8,31 @@ package zootopia;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
 public class Dolphin extends WaterAnimal {
 
+    public Dolphin(int x, int y) {
+        super();
+        beratBadan = 500;
+        jenisMakanan = 'k';
+        isLiar = false;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("I");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Hoo, I'm a dolphin.");
     }
 
     @Override
     public void berenang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }

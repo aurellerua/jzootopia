@@ -12,24 +12,32 @@ package zootopia;
  */
 public class Salamander extends LandWaterAnimal {
 
+    public Salamander(int x, int y) {
+        super();
+        beratBadan = 1;
+        jenisMakanan = 'k';
+        isLiar = false;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("K");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Salll, I'm a salamander.");
     }
-
+    
     @Override
     public void berjalan() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
 
     @Override
     public void berenang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }

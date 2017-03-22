@@ -12,24 +12,32 @@ package zootopia;
  */
 public class Snake extends LandWaterAnimal {
 
+    public Snake(int x, int y) {
+        super();
+        beratBadan = 3;
+        jenisMakanan = 'k';
+        isLiar = true;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("S");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Shhh, I'm a snake.");
     }
-
+    
     @Override
     public void berjalan() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
 
     @Override
     public void berenang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }

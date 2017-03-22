@@ -14,7 +14,7 @@ public class Cheetah extends LandAnimal {
     
     public Cheetah(int x, int y) {
         super();
-        beratBadan = 20;
+        beratBadan = 1000;
         jenisMakanan = 'k';
         isLiar = true;
         lokasi = new Point(x,y);
@@ -22,12 +22,12 @@ public class Cheetah extends LandAnimal {
 
     @Override
     public void tampilKarakter() {
-        System.out.println("x");
+        System.out.println("H");
     }
 
     @Override
     public void bersuara() {
-        System.out.println("suara cheetah");
+        System.out.println("Tah, I'm a cheetah.");
     }
 
     @Override

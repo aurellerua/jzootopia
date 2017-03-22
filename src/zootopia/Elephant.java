@@ -12,19 +12,27 @@ package zootopia;
  */
 public class Elephant extends LandAnimal {
 
+    public Elephant(int x, int y) {
+        super();
+        beratBadan = 10000;
+        jenisMakanan = 'h';
+        isLiar = false;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("L");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Humphhh, I'm an elephant.");
     }
 
     @Override
     public void berjalan() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }

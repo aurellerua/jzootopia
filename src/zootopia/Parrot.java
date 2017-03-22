@@ -8,28 +8,36 @@ package zootopia;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
 public class Parrot extends FlyingAnimal {
 
+    public Parrot(int x, int y) {
+        super();
+        beratBadan = 2;
+        jenisMakanan = 'o';
+        isLiar = false;
+        lokasi = new Point(x,y);
+    }
+
     @Override
     public void tampilKarakter() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("A");
     }
 
     @Override
     public void bersuara() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Rot, I'm a parrot.");
     }
 
     @Override
     public void berjalan() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
 
     @Override
     public void terbang() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        getLokasi().move(1,1);
     }
     
 }
