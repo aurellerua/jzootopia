@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-<<<<<<< HEAD
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Air.java</file>
+            <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/MainFrame.java</file>
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Zootopia.java</file>
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Cage.java</file>
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Land.java</file>
@@ -14,40 +13,6 @@
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/FlyingAnimal.java</file>
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Water.java</file>
             <file>file:/Users/theaolivia/GitHub/jzootopia/src/zootopia/Zoo.java</file>
-=======
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Frog.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Snake.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Elephant.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Tiger.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/LandWaterAnimal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Lion.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Panther.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Animal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Rayfish.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Whale.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Mountainlion.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Dove.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Salamander.java</file>
-=======
->>>>>>> 863f2c042ce0ecaff77dbb6fa997d1308958ff6b
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/WaterAnimal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/LandWaterAnimal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Zootopia.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/LandAnimal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Animal.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/FlyingAnimal.java</file>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Parrot.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Shark.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Piranha.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Eagle.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Cheetah.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Peacock.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Cendrawasih.java</file>
-            <file>file:/C:/Users/Hp/Documents/NetBeansProjects/Zootopia/jzootopia/src/zootopia/Crocodile.java</file>
->>>>>>> 6b9d7a8b12b8b353d63c305f1fd702e69a2fc29a
-=======
->>>>>>> 863f2c042ce0ecaff77dbb6fa997d1308958ff6b
         </group>
     </open-files>
 </project-private>
