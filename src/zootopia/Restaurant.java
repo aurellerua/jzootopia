@@ -10,6 +10,8 @@ package zootopia;
  *
  * @author Aurelia
  */
-public interface CellValue {
-    public CellValue getCode();    
+public class Restaurant extends Cell {
+    public Restaurant() {
+        code = 't';
+    }
 }

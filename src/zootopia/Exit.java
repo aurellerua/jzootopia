@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package zootopia;
 
+package zootopia;
 
 /**
  *
- * @author theaolivia
+ * @author Aurelia
  */
-public class Air extends Cell {
-    public Air() {
-        code = 'a';
+public class Exit extends Road {
+    public Exit() {
+        code = 'x';
     }
 }

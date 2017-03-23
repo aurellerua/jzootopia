@@ -11,61 +11,8 @@ package zootopia;
  * @author Thea Olivia
  */
 
-//public class Land extends Cell {
-//	static char land = 'l';
-////	static int x;
-////	static int y;
-////	static char val = '\0';
-//
-//	// public Land(int _x, int _y) {
-//	// 	x = _x;
-//	// 	y = _y;
-//	// 	val = land;
-//	// }
-//
-//        @Override
-//	public int getX() {
-//		return x;
-//	}
-//
-//        @Override
-//	public int getY() {
-//		return y;
-//	}
-//	
-//        @Override
-//	public char getChar() {
-//		return land;
-//	}
-
-//public class Land extends Cell {
-//	static char land = 'l';
-//	static int x;
-//	static int y;
-//	static char val = '\0';
-//
-//	// public Land(int _x, int _y) {
-//	// 	x = _x;
-//	// 	y = _y;
-//	// 	val = land;
-//	// }
-//
-//	public int getX() {
-//		return x;
-//	}
-//
-//	public int getY() {
-//		return y;
-//	}
-//	
-//	public char getChar() {
-//		return land;
-//	}
-//}
-
 public class Land extends Cell {
     public Land() {
         code = 'l';
     }
-
 }

@@ -26,13 +26,13 @@ public class Cage {
     public void addCage(Cell c) {
         for (int i=0; i<bar; i++) {
             for (int j=0; j<kol; j++) {
-                isiCage[j][i] = c;
+                isiCage[i][j] = c;
             }
         }
     }
     
     public Cell getCageCell(int i, int j) {
-        return isiCage[j][i];
+        return isiCage[i][j];
     }
     
     public void printCage(Cage cage) {
