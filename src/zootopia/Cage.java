@@ -35,14 +35,6 @@ public class Cage {
         return isiCage[j][i];
     }
     
-    public Cell[] getCageRow(int i, int j) {
-        Cell[] row = new Cell[bar];
-        for (i=0; i<bar; i++) {
-            row[i] = isiCage[i][getCageCell(i,j).getCellCode()];
-        }
-        return row;
-    }
-    
     public void printCage(Cage cage) {
         int i,j;
         for (i=0; i<bar; i++) {

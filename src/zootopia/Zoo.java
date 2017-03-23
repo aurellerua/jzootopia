@@ -34,8 +34,9 @@ public class Zoo {
     public void printZoo() {
         for (int i=0; i<x; i++) {
             for (int j=0; j<y; j++) {
-                System.out.println(cell[i][j].getCellCode());
+                System.out.print(cell[i][j].getCellCode());
             }
+            System.out.println();
         }
     }
         
