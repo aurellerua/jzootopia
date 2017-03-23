@@ -12,19 +12,21 @@ package zootopia;
  */
 public class Air extends Cell {
     static char air = 'a';
-    
-    @Override
-    public int getX() {
-        return x;
+    public Air() {
+        code = 'a';
     }
-
-    @Override
-    public int getY() {
-        return y;
-    }
-
-    @Override
-    public char getChar() {
-        return air;
-    }
+//    @Override
+//    public int getX() {
+//        return x;
+//    }
+//
+//    @Override
+//    public int getY() {
+//        return y;
+//    }
+//
+//    @Override
+//    public char getChar() {
+//        return air;
+//    }
 }

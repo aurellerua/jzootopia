@@ -24,7 +24,6 @@ public abstract class Animal {
     public void addMakanan(char c) {
         if (c=='k') {
             nbDaging = (float) (nbDaging + (0.02*beratBadan));
-            System.out.println("animal carnivore!");
         }
         else if (c=='h') {
             nbSayur = (float) (nbSayur + (0.02*beratBadan));

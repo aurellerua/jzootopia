@@ -12,20 +12,22 @@ package zootopia;
  */
 public class Water extends Cell {
     static char water = 'w';
-    
-        @Override
-	public int getX() {
-            return x;
-	}
-
-        @Override
-	public int getY() {
-            return y;
-	}
-	
-        @Override
-	public char getChar() {
-            return water;
-	}
+    public Water() {
+        code = 'w';
+    }
+//        @Override
+//	public int getX() {
+//            return x;
+//	}
+//
+//        @Override
+//	public int getY() {
+//            return y;
+//	}
+//	
+//        @Override
+//	public char getChar() {
+//            return water;
+//	}
     
 }
