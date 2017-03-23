@@ -18,6 +18,7 @@ public class Rayfish extends WaterAnimal {
         jenisMakanan = 'k';
         isLiar = false;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override

@@ -18,6 +18,7 @@ public class Frog extends LandWaterAnimal {
         jenisMakanan = 'k';
         isLiar = false;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override

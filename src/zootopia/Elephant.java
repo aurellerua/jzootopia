@@ -18,6 +18,7 @@ public class Elephant extends LandAnimal {
         jenisMakanan = 'h';
         isLiar = false;
         lokasi = new Point(x,y);
+        addMakanan(jenisMakanan);
     }
 
     @Override

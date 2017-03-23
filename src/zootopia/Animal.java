@@ -18,6 +18,22 @@ public abstract class Animal {
     protected Point lokasi;
     protected char[] habitat;
     
+    static float nbDaging = 0;
+    static float nbSayur = 0;
+    
+    public void addMakanan(char c) {
+        if (c=='k') {
+            nbDaging = (float) (nbDaging + (0.02*beratBadan));
+            System.out.println("animal carnivore!");
+        }
+        else if (c=='h') {
+            nbSayur = (float) (nbSayur + (0.02*beratBadan));
+        }
+        else if (c=='o') {
+            nbDaging = (float) (nbDaging + (0.01*beratBadan));
+            nbSayur = (float) (nbSayur + (0.02*beratBadan));
+        }
+    }
     
     public int getBeratBadan() {
         return beratBadan;
@@ -37,6 +53,10 @@ public abstract class Animal {
     
     public boolean isHabitat(char c) {
         return (habitat[0]==c || habitat[1]==c);
+    }
+    
+    public float getNbMakanan() {
+        return nbDaging + nbSayur;
     }
     
     public abstract void tampilKarakter();
