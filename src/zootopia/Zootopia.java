@@ -29,6 +29,12 @@ public class Zootopia {
         
         System.out.println("done");
         // TODO code application logic here
+        
+        Cage cageLand = new Cage(2,2);
+        cageLand.addCage(new Land());
+        
+        System.out.println(cageLand.getCageCell(1, 1).getCellCode());
+        
 //        Cage<Land> cageland = new Cage<Land>();
 //
 //        cageland.add(new Land());

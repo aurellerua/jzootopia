@@ -11,7 +11,7 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Zoo {
-	Cell c;
+	//Cell c;
 
 	public Zoo(int x, int y)
 	{
