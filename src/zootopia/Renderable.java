@@ -12,15 +12,15 @@ package zootopia;
  */
 public class Renderable {
 
-	public Renderable() {
+    public Renderable() {
 
-	}
+    }
 
-	public void printZoo() {
-		System.out.println("zoo");
-	}
+    public void printZoo() {
+        System.out.println("zoo");
+    }
 
-	public char decode() {
-
-	}
+    public char decode() {
+        return 'a';
+    }
 }

@@ -26,7 +26,7 @@ public class Zootopia {
         System.out.println(c.getLokasi().getX());
         System.out.println("done");
         // TODO code application logic here
-        Cage<Land> cageland = new Cage<Land>();
+        Cage<Land> cageland = new Cage<>();
 
         cageland.add(new Land());
         System.out.printf("Check land :%d\n\n", cageland.getCell());

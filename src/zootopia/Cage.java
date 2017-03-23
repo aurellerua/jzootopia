@@ -9,15 +9,16 @@ package zootopia;
 /**
  *
  * @author Thea Olivia
+ * @param <Cell>
  */
 public class Cage<Cell> {
-	private Cell c;
+    private Cell c;
 
-	public void add (Cell c) {
-		this.c = c;
-	}
+    public void add (Cell c) {
+        this.c = c;
+    }
 
-	public Cell getCell() {
-		return c;
-	}
+    public Cell getCell() {
+        return c;
+    }
 }

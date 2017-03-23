@@ -16,7 +16,6 @@ public abstract class FlyingAnimal extends Animal {
         habitat[0] = 'l';
         habitat[1] = 'a';
     }
-    
     public abstract void berjalan();
     public abstract void terbang();
 }

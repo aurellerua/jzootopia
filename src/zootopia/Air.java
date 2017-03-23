@@ -3,33 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package zootopia;
+
 
 /**
  *
- * @author Thea Olivia
+ * @author theaolivia
  */
-public class Cell {
-    int x;
-    int y;
-    static char val = '\0';
-
-	// public Cell(int _x, int _y) {
-	// 	x = _x;
-	// 	y = _y;
-	// 	val = '\0';
-	// }
-
+public class Air extends Cell {
+    static char air = 'a';
+    
+    @Override
     public int getX() {
         return x;
     }
 
+    @Override
     public int getY() {
         return y;
     }
 
+    @Override
     public char getChar() {
-        return val;
+        return air;
     }
 }
