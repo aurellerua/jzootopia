@@ -11,20 +11,32 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Zoo {
+    private int x;
+    private int y;
+    private Cell cell[][];
 
-    Cell c;
-}
 	//Cell c;
 
 
-//    public Zoo(int x, int y)
-//    {
-//        Cell[][] cell = new Cell[x][y];
-//        for (int i=0; i<x; i++) {
-//            for (int j=0; j<y; j++) {
-//                cell[i][j] = new Cell();
-//            }
-//        }
-//    }
-//        
-//}
+    public Zoo(int x, int y)
+    {
+        Cell[][] cell = new Cell[x][y];
+        for (int i=0; i<x; i++) {
+            for (int j=0; j<y; j++) {
+                cell[i][j] = new Cell() 
+                {
+                    //System.out.println(cell[i][j].getCellCode());
+                };
+            }
+        }
+    }
+    
+    public void printZoo() {
+        for (int i=0; i<x; i++) {
+            for (int j=0; j<y; j++) {
+                System.out.println(cell[i][j].getCellCode());
+            }
+        }
+    }
+        
+}

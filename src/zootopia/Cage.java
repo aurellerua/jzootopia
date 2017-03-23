@@ -6,6 +6,8 @@
 
 package zootopia;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Thea Olivia
@@ -37,13 +39,38 @@ public class Cage {
     public void addCage(Cell c) {
         for (int i=0; i<bar; i++) {
             for (int j=0; j<kol; j++) {
-                isiCage[i][j] = c;
+                isiCage[j][i] = c;
             }
         }
     }
     
     public Cell getCageCell(int i, int j) {
-        return isiCage[i][j];
+        return isiCage[j][i];
     }
     
+    public Cell[] getCageRow(int i, int j) {
+        Cell[] row = new Cell[bar];
+        for (i=0; i<bar; i++) {
+            row[i] = isiCage[i][getCageCell(i,j).getCellCode()];
+        }
+        return row;
+    }
+    
+    public void printCage(Cage cage) {
+        int i,j;
+        for (i=0; i<bar; i++) {
+            for (j=0; j<kol; j++) {                
+                System.out.print(getCageCell(i,j).getCellCode());
+            }
+            System.out.println();
+        }
+        //System.out.print()
+//        for (i=0; i<bar; i++) {
+//            System.out.print(getCageCell(i,j).getCellCode());
+//        }
+//        for (Cell[] row : getCageCell(i,j)) {
+//            
+//        }
+//        System.out.println();
+    }
 }
