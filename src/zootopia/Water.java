@@ -14,19 +14,4 @@ public class Water extends Cell {
     public Water() {
         code = 'w';
     }
-//        @Override
-//	public int getX() {
-//            return x;
-//	}
-//
-//        @Override
-//	public int getY() {
-//            return y;
-//	}
-//	
-//        @Override
-//	public char getChar() {
-//            return water;
-//	}
-    
 }
