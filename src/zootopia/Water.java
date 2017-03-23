@@ -11,7 +11,6 @@ package zootopia;
  * @author theaolivia
  */
 public class Water extends Cell {
-    static char water = 'w';
     public Water() {
         code = 'w';
     }

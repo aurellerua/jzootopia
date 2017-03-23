@@ -11,7 +11,6 @@ package zootopia;
  * @author theaolivia
  */
 public class Air extends Cell {
-    static char air = 'a';
     public Air() {
         code = 'a';
     }
