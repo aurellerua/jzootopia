@@ -19,7 +19,6 @@ public class Zootopia {
         Animal c = new Cheetah(1,1);
         Cheetah cc = new Cheetah(0,1);
         
-        //c.berjalan();
         c.bersuara();
         if (c.isHabitat('l')) {
             System.out.println("this is land animal");

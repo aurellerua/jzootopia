@@ -9,18 +9,20 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
 
 /**
  *
  * @author theaolivia
  */
 public class MainFrame extends javax.swing.JFrame {
-
+    ImageIcon img = new ImageIcon("/zootopia/images/animal-icon-png-6266.png");
     /**
      * Creates new form MainFrame
      */
     public MainFrame() {
         initComponents();
+        
     }
 
     /**
