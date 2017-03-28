@@ -37,6 +37,7 @@ public class Zootopia {
         
         //cageLand.addCage(new Land());
         //cageLand.printCage(cageLand);
+
         
         Zoo zoo = new Zoo(4,4,3);
         zoo.assignCage(2,2,cageLand);
