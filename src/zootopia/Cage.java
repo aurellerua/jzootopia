@@ -13,14 +13,21 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Cage {
+    private static int count_cage = 0;
     private final int kol;
     private final int bar;
-    private final Cell[][] isiCage;
+    final Cell[][] isiCage;
     
-    public Cage(int m, int n) {
+    public Cage(int m, int n, Cell c) {
         kol = m;
         bar = n;
         isiCage = new Cell[bar][kol];
+        count_cage++;
+        for (int i=0; i<bar; i++) {
+            for (int j=0; j<kol; j++) {
+                isiCage[i][j] = c;
+            }
+        }
     }
     
     public void addCage(Cell c) {
@@ -33,6 +40,10 @@ public class Cage {
     
     public Cell getCageCell(int i, int j) {
         return isiCage[i][j];
+    }
+    
+    public static int getNumberOfCages() {
+        return count_cage;
     }
     
     public void printCage(Cage cage) {

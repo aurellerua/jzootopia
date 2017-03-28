@@ -11,6 +11,7 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Zoo {
+    
     private int frag_bar;
     private int frag_kol;
     private int x;
@@ -22,7 +23,10 @@ public class Zoo {
     private int rest_kol;
     private int park_bar;
     private int park_kol;
+    private int road_bar;
+    private int road_kol;
     private Cell cell[][];
+    private Cell c;
     private Cage cage;
     private Restaurant restaurant;
     private Park park;
@@ -34,19 +38,24 @@ public class Zoo {
         this.x = x;
         this.y = y;
         this.num_of_cage = num_of_cage;
-//        this.park_bar = park_bar;
-//        this.park_kol = park_kol;
-//        this.rest_bar = rest_bar;
-//        this.rest_kol = rest_kol;
         cell = new Cell[x][y];
-        for (int it=0; it<num_of_cage; it++) cage = new Cage(cage_bar,cage_kol);
+        cage = new Cage(cage_bar,cage_kol,c);
+        int it = Cage.getNumberOfCages();
+        assert it <= num_of_cage;
+        for (int i=0; i<x; i++) {
+            for (int j=0; j<y; j++) {
+                cell[i][j] = null;
+            }
+        }
     }
     
     public void assignCage(int cage_bar, int cage_kol, Cage cage) {
         //assert Cage <= num_of_cage;
         for (int i=0; i<cage_bar; i++) {
             for (int j=0; j<cage_kol; j++) {
-                cell[i][j] = cage.getCageCell(i,j);
+                assert this.isEmpty(i,j);
+                cell[i][j] = cage.isiCage[i][j];
+                
             }
         }
     }
@@ -54,23 +63,26 @@ public class Zoo {
     public void assignRestaurant(int rest_bar, int rest_kol, Restaurant restaurant) {
         for (int i=0; i<rest_bar; i++) {
             for (int j=0; j<rest_kol; j++) {
-                cell[i][j] = getCell(i,j);
+                assert this.isEmpty(i,j);
+                cell[i][j] = restaurant;
             }
         }  
     }
     
-    public void assignPark(int park_bar, int park_kol, Park park) {
+    public void assignPark(int park_bar, int park_kol, Park park) {  
         for (int i=0; i<park_bar; i++) {
             for (int j=0; j<park_kol; j++) {
-                cell[i][j] = getCell(i,j);
+                assert this.isEmpty(i,j);
+                cell[i][j] = park;             
             }
         }
     }
     
-    public void assignRoad(int i, int j, Road road) {
-        for (int _i=0; _i<i; _i++) {
-            for (int _j=0; _j<j; _j++) {
-                cell[_i][_j] = getCell(_i,_j);
+    public void assignRoad(int road_bar, int road_kol, Road road) {
+        for (int i=0; i<road_bar; i++) {
+            for (int j=0; j<road_kol; j++) {
+                assert this.isEmpty(i,j);
+                cell[i][j] = road;
             }
         }
     }
@@ -94,7 +106,11 @@ public class Zoo {
             }
         }
     }
-
+    
+    public boolean isEmpty(int i, int j) {
+        return cell[i][j] == null;
+    }
+    
     public void printZoo() {
         for (int i=0; i<x; i++) {
             for (int j=0; j<y; j++) {

@@ -28,17 +28,21 @@ public class Zootopia {
         
         System.out.println("done");
         
-        Cage cageLand = new Cage(2,2);
-        Cage cageWater = new Cage(2,1);
-        Cage cageAir = new Cage(1,2);
+        Cage cageLand = new Cage(2,2,new Land());
+        Cage cageWater = new Cage(2,1,new Water());
+        Cage cageAir = new Cage(1,2,new Air());
         Park park = new Park();
+        Restaurant restaurant = new Restaurant();
+        Road road = new Road();
         
-        cageLand.addCage(new Land());
-        cageLand.printCage(cageLand);
+        //cageLand.addCage(new Land());
+        //cageLand.printCage(cageLand);
         
-        Zoo zoo = new Zoo(6,10,3);
-        zoo.assignCage(2, 2, cageLand);
-
+        Zoo zoo = new Zoo(4,4,3);
+        zoo.assignCage(2,2,cageLand);
+        zoo.assignPark(4,4,park);
+        //zoo.assignRestaurant(2,4,restaurant);
+        //zoo.assignRoad(1,10,road);
         zoo.printZoo();
         
 //        Cage<Land> cageland = new Cage<Land>();
