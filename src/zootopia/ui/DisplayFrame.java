@@ -5,6 +5,8 @@
  */
 package zootopia.ui;
 
+import java.awt.*;
+import javax.swing.*;
 import zootopia.Renderable;
 
 /**
@@ -13,12 +15,18 @@ import zootopia.Renderable;
  */
 public class DisplayFrame extends javax.swing.JFrame {
     Renderable r = new Renderable();
+    GridLayout experimentLayout = new GridLayout(12,16,0,0);
+    
     /**
      * Creates new form DisplayFrame
      */
     public DisplayFrame() {
         initComponents();
         r.printZoo();
+        jPanel1.setLayout(experimentLayout);
+        for (int i = 0; i < 12; i++) // rows
+            for (int j = 0; j < 16; j++) // columns
+                jPanel1.add(new JLabel("#" + (1+i*16+j)));
     }
 
     /**
@@ -33,7 +41,6 @@ public class DisplayFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(640, 480));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
