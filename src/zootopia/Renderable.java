@@ -13,7 +13,7 @@ package zootopia;
 public class Renderable {
 
     public Renderable() {
-
+        
     }
 
     public void printZoo() {

@@ -35,7 +35,7 @@ public class Cage {
         return isiCage[i][j];
     }
     
-    public void printCage(Cage[][] cage) {
+    public void printCage(Cage cage) {
         int i,j;
         for (i=0; i<bar; i++) {
             for (j=0; j<kol; j++) {                
