@@ -20,7 +20,7 @@ public class Cage {
     public Cage(int m, int n) {
         kol = m;
         bar = n;
-        isiCage = new Cell[kol][bar];
+        isiCage = new Cell[bar][kol];
     }
     
     public void addCage(Cell c) {
@@ -35,7 +35,7 @@ public class Cage {
         return isiCage[i][j];
     }
     
-    public void printCage(Cage cage) {
+    public void printCage(Cage[][] cage) {
         int i,j;
         for (i=0; i<bar; i++) {
             for (j=0; j<kol; j++) {                

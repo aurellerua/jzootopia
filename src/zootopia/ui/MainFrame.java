@@ -45,8 +45,18 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel1.setText(bundle.getString("Zootopia_logo.png")); // NOI18N
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/zootopia/images/etc/display.png"))); // NOI18N
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                displayClickedHandler(evt);
+            }
+        });
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/zootopia/images/etc/tour.png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tourClickedHandler(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -79,6 +89,22 @@ public class MainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void displayClickedHandler(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_displayClickedHandler
+        // TODO add your handling code here:
+        DisplayFrame df = new DisplayFrame();
+        df.setDefaultCloseOperation(DisplayFrame.DISPOSE_ON_CLOSE);
+        df.setVisible(true);
+        
+    }//GEN-LAST:event_displayClickedHandler
+
+    private void tourClickedHandler(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tourClickedHandler
+        // TODO add your handling code here:
+        TourFrame tf = new TourFrame();
+        tf.setDefaultCloseOperation(TourFrame.DISPOSE_ON_CLOSE);
+        tf.setVisible(true);
+        
+    }//GEN-LAST:event_tourClickedHandler
 
     /**
      * @param args the command line arguments

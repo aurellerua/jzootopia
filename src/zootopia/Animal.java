@@ -60,4 +60,5 @@ public abstract class Animal {
     
     public abstract void tampilKarakter();
     public abstract void bersuara();
+    
 }

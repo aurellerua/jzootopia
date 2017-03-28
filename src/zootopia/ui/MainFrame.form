@@ -73,6 +73,9 @@
           <Image iconType="3" name="/zootopia/images/etc/display.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="displayClickedHandler"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -80,6 +83,9 @@
           <Image iconType="3" name="/zootopia/images/etc/tour.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tourClickedHandler"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

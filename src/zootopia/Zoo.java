@@ -14,21 +14,25 @@ public class Zoo {
     private int x;
     private int y;
     private Cell cell[][];
+    private Cage cage[][];
 
-	//Cell c;
-
-
-    public Zoo(int x, int y)
+    public Zoo(int x, int y, Cage cage[][])
     {
         this.x = x;
         this.y = y;
-        cell = new Cell[x][y];
+        //cell = new Cell[x][y];
+        cage = new Cage[x][y];
+        //cage = new Cage[][];
+    }
+    
+    public Cage getCage(int i, int j){
+        return cage[i][j];
     }
     
     public void printZoo() {
         for (int i=0; i<x; i++) {
             for (int j=0; j<y; j++) {
-                System.out.print(cell[i][j].getCellCode());
+                getCage(i,j).printCage(cage);
             }
             System.out.println();
         }
