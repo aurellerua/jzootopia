@@ -24,9 +24,11 @@ public class DisplayFrame extends javax.swing.JFrame {
         initComponents();
         r.printZoo();
         jPanel1.setLayout(experimentLayout);
+        
+        // isi sesuai dengan map
         for (int i = 0; i < 12; i++) // rows
             for (int j = 0; j < 16; j++) // columns
-                jPanel1.add(new JLabel("#" + (1+i*16+j)));
+                jPanel1.add(new JLabel("X",JLabel.CENTER));
     }
 
     /**
@@ -42,15 +44,17 @@ public class DisplayFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
+            .addGap(0, 618, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 458, Short.MAX_VALUE)
+            .addGap(0, 456, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
