@@ -16,23 +16,43 @@ public class Zoo {
     private Cell cell[][];
     private Cage cage[][];
 
-    public Zoo(int x, int y, Cage cage[][])
+    public Zoo(int x, int y)
     {
         this.x = x;
         this.y = y;
-        //cell = new Cell[x][y];
-        cage = new Cage[x][y];
-        //cage = new Cage[][];
+        cell = new Cell[x][y];
+        
+        for (int i=0; i<x; i++) {
+            for (int j=0; j<y; j++) {
+                
+            }
+        }
     }
     
-    public Cage getCage(int i, int j){
-        return cage[i][j];
+    public void assignCage(Cage cage) {
+        for (int i=0; i<x; i++) {
+            for (int j=0; j<y; j++) {
+                
+            }
+        }
+    }
+    
+    public void assignRestaurant(Restaurant restaurant) {
+    
+    }
+    
+    public void assignPark(Park park) {
+        
+    }
+    
+    public Cell getCell(int i, int j){
+        return cell[i][j];
     }
     
     public void printZoo() {
         for (int i=0; i<x; i++) {
             for (int j=0; j<y; j++) {
-                getCage(i,j).printCage(cage);
+                
             }
             System.out.println();
         }
