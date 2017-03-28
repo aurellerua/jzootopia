@@ -16,7 +16,11 @@ import javax.swing.ImageIcon;
  * @author theaolivia
  */
 public class MainFrame extends javax.swing.JFrame {
-    ImageIcon img = new ImageIcon("/zootopia/images/animal-icon-png-6266.png");
+    ImageIcon imageIcon = new ImageIcon("/zootopia/images/animal-icon-png-6266.png"); // load the image to a imageIcon
+    Image image = imageIcon.getImage(); // transform it 
+    Image newimg = image.getScaledInstance(800, 160,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
+    
+    ImageIcon imageIcon2 = new ImageIcon(newimg);  // transform it back
     /**
      * Creates new form MainFrame
      */
@@ -40,9 +44,13 @@ public class MainFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/zootopia/images/etc/Zootopia_logo.png"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("zootopia/images/etc/Bundle"); // NOI18N
         jLabel1.setText(bundle.getString("Zootopia_logo.png")); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(800, 160));
+        jLabel1.setMinimumSize(new java.awt.Dimension(800, 160));
+        jLabel1.setPreferredSize(new java.awt.Dimension(800, 160));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/zootopia/images/etc/display.png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -79,12 +87,13 @@ public class MainFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(25, 25, 25)
+                .addGap(63, 63, 63)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         pack();
@@ -134,6 +143,7 @@ public class MainFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {

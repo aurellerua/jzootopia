@@ -32,11 +32,11 @@ public class Zootopia {
         Cage[][] cageWater = new Cage[2][1];
         Cage[][] cageAir = new Cage[1][2];
         
-        cageLand.addCage(new Land());
+        //cageLand.addCage(new Land());
 //        cageWater.addCage(new Water());
 //        cageAir.addCage(new Air());
         
-        cageLand.printCage(cageLand);
+        //cageLand.printCage(cageLand);
         
         
 //        Cage<Land> cageland = new Cage<Land>();
