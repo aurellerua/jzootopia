@@ -44,10 +44,10 @@ public class CrocodileTest {
     @Test
     public void testTampilKarakter() {
         System.out.println("tampilKarakter");
-        Crocodile instance = null;
+        Crocodile instance = new Crocodile(1,1);
         instance.tampilKarakter();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,10 +56,10 @@ public class CrocodileTest {
     @Test
     public void testBersuara() {
         System.out.println("bersuara");
-        Crocodile instance = null;
+        Crocodile instance = new Crocodile(1,1);
         instance.bersuara();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -68,10 +68,14 @@ public class CrocodileTest {
     @Test
     public void testBerjalan() {
         System.out.println("berjalan");
-        Crocodile instance = null;
+        Crocodile instance = new Crocodile(1,1);
         instance.berjalan();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -80,10 +84,14 @@ public class CrocodileTest {
     @Test
     public void testBerenang() {
         System.out.println("berenang");
-        Crocodile instance = null;
+        Crocodile instance = new Crocodile(1,1);
         instance.berenang();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
