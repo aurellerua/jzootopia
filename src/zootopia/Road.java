@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public class Road extends Cell {
+    /**
+     * Konstruktor dari kelas Road.
+     * <p>
+     * Menciptakan sebuah jalan di zoo.
+     */
     public Road() {
         code = ' ';
     }

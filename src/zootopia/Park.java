@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public class Park extends Cell {
+    /**
+     * Konstruktor dari kelas Park.
+     * <p>
+     * Menciptakan park.
+     */
     public Park() {
         code = 'p';
     }

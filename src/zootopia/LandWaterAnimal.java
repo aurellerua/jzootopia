@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public abstract class LandWaterAnimal extends Animal {
+    /**
+     * Konstruktor dari kelas LandWaterAnimal.
+     * <p>
+     * Menciptakan LandWaterAnimal dengan habitat.
+     */
     public LandWaterAnimal() {
         habitat = new char[2];
         habitat[0] = 'l';

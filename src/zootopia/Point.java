@@ -13,12 +13,22 @@ package zootopia;
 class Point {
     private int x;
     private int y;
-    
+    /**
+     * Konstruktor dari kelas Point.
+     * <p>
+     * Menciptakan sebuah point (0,0).
+     */
     public Point() {
         x = 0;
         y = 0;
     }
-    
+    /**
+     * Konstruktor dari kelas Point.
+     * <p>
+     * Menciptakan sebuah point (x,y).
+     * @param x posisi x
+     * @param y posisi y
+     */
     public Point(int x, int y) {
         this.x = x;
         this.y = y;

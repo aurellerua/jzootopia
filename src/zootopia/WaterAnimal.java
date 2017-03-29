@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public abstract class WaterAnimal extends Animal {
+    /**
+     * Konstruktor dari kelas WaterAnimal.
+     * <p>
+     * Menciptakan sebuah WaterAnimal di habitat air.
+     */
     public WaterAnimal() {
         habitat = new char[2];
         habitat[0] = 'w';

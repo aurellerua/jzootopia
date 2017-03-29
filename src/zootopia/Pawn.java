@@ -10,6 +10,11 @@ package zootopia;
  * @author theaolivia
  */
 public class Pawn extends Cell {
+    /**
+     * Konstruktor dari kelas Pawn.
+     * <p>
+     * Menciptakan pawn.
+     */
     public Pawn() {
         code = 'x';
     }
