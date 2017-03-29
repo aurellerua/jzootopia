@@ -16,18 +16,27 @@ public class Zootopia {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Animal c = new Cheetah(1,1);
-        Cheetah cc = new Cheetah(0,1);
-        
+        /* 
+         *  Create animals.
+         */
+        Animal c = new Cheetah(1, 1);
+        /* 
+         *  Create cheetah.
+         */
+        Cheetah cc = new Cheetah(0, 1);    
+        /* 
+         *  get cheetah's sound.
+         */
         c.bersuara();
         if (c.isHabitat('l')) {
             System.out.println("this is land animal");
         }
         System.out.println(c.getLokasi().getX());
-        System.out.println(c.getNbMakanan());
-        
+        System.out.println(c.getNbMakanan());        
         System.out.println("done");
-        
+        /* 
+         *  Create cages from respective habitat
+         */
         Cage cageLand = new Cage(4,4,new Land());
         Cage cageWater = new Cage(2,1,new Water());
         Cage cageAir = new Cage(1,2,new Air());
