@@ -19,7 +19,11 @@ public class Renderable {
     public Renderable() {
         
     }
-
+    /**
+     * Mencetak zoo.
+     * <p>
+     * Mencetak zoo
+     */
     public void printZoo() {
         System.out.println("zoo");
     }
