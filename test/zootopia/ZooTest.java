@@ -45,11 +45,11 @@ public class ZooTest {
         System.out.println("assignCage");
         int cage_bar = 0;
         int cage_kol = 0;
-        Cage cage = null;
-        Zoo instance = null;
+        Cage cage = new Cage(2,2,new Air());
+        Zoo instance = new Zoo(5,5,2);
         instance.assignCage(cage_bar, cage_kol, cage);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        ////fail("The test case is a prototype.");
     }
 
     /**
@@ -60,11 +60,11 @@ public class ZooTest {
         System.out.println("assignRestaurant");
         int rest_bar = 0;
         int rest_kol = 0;
-        Restaurant restaurant = null;
-        Zoo instance = null;
+        Restaurant restaurant = new Restaurant();
+        Zoo instance = new Zoo(5,5,2);
         instance.assignRestaurant(rest_bar, rest_kol, restaurant);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -75,11 +75,11 @@ public class ZooTest {
         System.out.println("assignPark");
         int park_bar = 0;
         int park_kol = 0;
-        Park park = null;
-        Zoo instance = null;
+        Park park = new Park();
+        Zoo instance = new Zoo(5,5,2);
         instance.assignPark(park_bar, park_kol, park);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -90,11 +90,11 @@ public class ZooTest {
         System.out.println("assignRoad");
         int road_bar = 0;
         int road_kol = 0;
-        Road road = null;
-        Zoo instance = null;
+        Road road = new Road();
+        Zoo instance = new Zoo(5,5,2);
         instance.assignRoad(road_bar, road_kol, road);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -103,12 +103,12 @@ public class ZooTest {
     @Test
     public void testGetEntrance() {
         System.out.println("getEntrance");
-        Zoo instance = null;
-        Entrance expResult = null;
+        Zoo instance = new Zoo(5,5,2);
+        Entrance expResult = new Entrance();
         Entrance result = instance.getEntrance();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -117,12 +117,12 @@ public class ZooTest {
     @Test
     public void testGetExit() {
         System.out.println("getExit");
-        Zoo instance = null;
-        Exit expResult = null;
+        Zoo instance = new Zoo(5,5,2);
+        Exit expResult = new Exit();
         Exit result = instance.getExit();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -133,12 +133,12 @@ public class ZooTest {
         System.out.println("getCell");
         int i = 0;
         int j = 0;
-        Zoo instance = null;
-        Cell expResult = null;
+        Zoo instance = new Zoo(5,5,2);
+        Cell expResult = new Air();
         Cell result = instance.getCell(i, j);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -149,10 +149,10 @@ public class ZooTest {
         System.out.println("addCell");
         int x = 0;
         int y = 0;
-        Zoo instance = null;
+        Zoo instance = new Zoo(5,5,2);
         instance.addCell(x, y);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -163,12 +163,12 @@ public class ZooTest {
         System.out.println("isEmpty");
         int i = 0;
         int j = 0;
-        Zoo instance = null;
+        Zoo instance = new Zoo(5,5,2);
         boolean expResult = false;
         boolean result = instance.isEmpty(i, j);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -177,12 +177,12 @@ public class ZooTest {
     @Test
     public void testGetPawn() {
         System.out.println("getPawn");
-        Zoo instance = null;
-        Pawn expResult = null;
+        Zoo instance = new Zoo(5,5,2);
+        Pawn expResult = new Pawn();
         Pawn result = instance.getPawn();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -191,10 +191,10 @@ public class ZooTest {
     @Test
     public void testPrintZoo() {
         System.out.println("printZoo");
-        Zoo instance = null;
+        Zoo instance = new Zoo(5,5,2);
         instance.printZoo();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

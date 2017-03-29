@@ -21,7 +21,13 @@ public abstract class LandWaterAnimal extends Animal {
         habitat[0] = 'l';
         habitat[1] = 'w';
     }
-    
+    /**
+     * Bergerak di habitat land yang ditandai dengan 'l'.
+     */
     public abstract void berjalan();
+    
+    /**
+     * Bergerak di habitat water yang ditandai dengan 'w'.
+     */
     public abstract void berenang();
 }

@@ -21,6 +21,8 @@ public abstract  class LandAnimal extends Animal {
         habitat[0] = 'l';
         habitat[1] = '\0';
     }
-    
+    /**
+     * Bergerak di habitat land yang ditandai dengan 'l'.
+     */
     public abstract void berjalan();
 }

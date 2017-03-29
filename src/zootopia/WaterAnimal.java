@@ -21,6 +21,8 @@ public abstract class WaterAnimal extends Animal {
         habitat[0] = 'w';
         habitat[1] = '\0';
     }
-    
+    /**
+     * Bergerak di habitat water yang ditandai dengan 'w'.
+     */
     public abstract void berenang();
 }
