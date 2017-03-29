@@ -19,11 +19,12 @@ public class Lion extends LandAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'N';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("N");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

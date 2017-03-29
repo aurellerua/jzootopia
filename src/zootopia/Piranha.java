@@ -19,11 +19,12 @@ public class Piranha extends WaterAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'Z';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("Z");
+    public char tampilKarakter() {
+       return code;
     }
 
     @Override

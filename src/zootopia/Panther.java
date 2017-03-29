@@ -19,11 +19,12 @@ public class Panther extends LandAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'R';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("R");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

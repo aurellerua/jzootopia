@@ -17,6 +17,7 @@ public class Cage {
     private final int kol;
     private final int bar;
     final Cell[][] isiCage;
+    private Animal animal;
     
     /**
      * Konstruktor dari kelas Cage.
@@ -67,6 +68,11 @@ public class Cage {
     public static int getNumberOfCages() {
         return count_cage;
     }
+    
+    public void assignAnimal(int i, int j, Cage cage, Animal animal){
+        isiCage[i][j] = animal;
+    }
+    
     /**
      * Mencetak cage ke layar
      * <p>

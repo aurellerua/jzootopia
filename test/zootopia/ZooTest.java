@@ -172,20 +172,6 @@ public class ZooTest {
     }
 
     /**
-     * Test of getPawn method, of class Zoo.
-     */
-    @Test
-    public void testGetPawn() {
-        System.out.println("getPawn");
-        Zoo instance = new Zoo(5,5,2);
-        Pawn expResult = new Pawn();
-        Pawn result = instance.getPawn();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
-    }
-
-    /**
      * Test of printZoo method, of class Zoo.
      */
     @Test

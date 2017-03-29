@@ -19,11 +19,12 @@ public class Dove extends FlyingAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'D';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("D");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

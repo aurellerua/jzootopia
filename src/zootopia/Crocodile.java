@@ -19,11 +19,12 @@ public class Crocodile extends LandWaterAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'O';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("O");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

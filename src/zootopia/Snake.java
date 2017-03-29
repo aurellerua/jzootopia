@@ -19,11 +19,12 @@ public class Snake extends LandWaterAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'S';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("S");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

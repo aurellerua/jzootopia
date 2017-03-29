@@ -19,11 +19,12 @@ public class Salamander extends LandWaterAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'K';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("K");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

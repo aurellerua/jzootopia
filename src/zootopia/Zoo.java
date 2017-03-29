@@ -36,6 +36,8 @@ public class Zoo {
     private Entrance entrance;
     private Exit exit;
     private Pawn pawn;
+    private Animal animal;
+    private Road road;
 
     /**
      * Konstruktor dari kelas Zoo. 
@@ -78,7 +80,7 @@ public class Zoo {
         for (int i = 0; i < cage_bar; i++) {
             for (int j = 0; j < cage_kol; j++) {
                 assert this.isEmpty(i, j);
-                cell[i][j] = cage.isiCage[i][j];             
+                cell[i][j] = cage.isiCage[i][j];
             }
         }
     }
@@ -129,11 +131,29 @@ public class Zoo {
         Cell [][] new_cell = new Cell[x][y];
         int new_x = Math.min(x, this.x);
         int new_y = Math.min(y, this.y);
-        for (int i=0; i<new_y; i++) {
+        for (int i=0; i<new_x; i++) {
             System.arraycopy(cell, y, new_cell, 0, new_y);
         }
         cell = new_cell;
-    }   
+    }
+    /**
+     * Meng-generate zoo baru
+     * @param  deltaX    pertambahan baris
+     * @param  deltaY    pertambahan kolom
+     * @param  cell      tabel lama
+     * @see    Cell
+     */
+    public void extendZoo(int deltaX, int deltaY, Cell cell) {
+        int newX = x + deltaX;
+        int newY = y + deltaY;
+        Cell[][] newCell = new Cell[newX][newY];
+        for (int i = 0; i < newX; i++) {
+            for (int j = 0; j < newY; j++) {
+                newCell[i][j] = cell;
+            }
+        }
+        //return newCell;
+    }
     /**
      * Mengecek isi matriks. 
      * <p>
@@ -146,8 +166,14 @@ public class Zoo {
     public boolean isEmpty(int i, int j) {
         return cell[i][j] == null;
     }
-    public Pawn getPawn() {
-        return pawn;
+    
+    public void assignPawn(int i, int j, Road road, Animal animal) {
+        cell[i][j] = pawn;
+    }
+    
+    public void assignAnimal(int i, int j, Cage cage, Animal animal){
+        if (animal.isHabitat(cell[i][j].getCellCode()))
+            cell[i][j] = animal;
     }
     /**
      * Menampilkan matriks zoo.

@@ -10,7 +10,7 @@ package zootopia;
  *
  * @author Aurelia
  */
-public abstract class Animal {
+public abstract class Animal extends Cell {
     /**
      * counter banyaknya hewan yang tercipta.
      */
@@ -52,6 +52,10 @@ public abstract class Animal {
      */
     static float nbSayur = 0;
     /**
+     * kode untuk animal.
+     */
+    protected char code;
+    /**
      * Konstruktor dari kelas Animal.
      * <p>
      * Menghitung animal yang diciptakan.
@@ -62,7 +66,7 @@ public abstract class Animal {
     /**
      * Menambah makanan dari Animal.
      * <p>
-     * @param c char yang merupakan tag dari makanan
+     * @param c char yang merupakan tag dari makanan.
      */
     public void addMakanan(char c) {
         if (c == 'k') {
@@ -98,9 +102,9 @@ public abstract class Animal {
         return isLiar;
     }
     /**
-     * Getter lokasi
-     * @return lokasi
-     * @see Point
+     * Getter lokasi.
+     * @return lokasi.
+     * @see Point.
      */
     public Point getLokasi() {
         return lokasi;
@@ -123,7 +127,7 @@ public abstract class Animal {
     /**
      * fungsi abstrak menampilkan karakter.
      */
-    public abstract void tampilKarakter();
+    public abstract char tampilKarakter();
     /**
      * fungsi abstrak untuk menampilkan suara hewan.
      */

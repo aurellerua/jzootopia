@@ -19,11 +19,12 @@ public class Frog extends LandWaterAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'F';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("F");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

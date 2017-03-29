@@ -19,11 +19,12 @@ public class Eagle extends FlyingAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'E';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("E");
+    public char tampilKarakter() {
+       return code;
     }
 
     @Override
