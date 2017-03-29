@@ -44,10 +44,10 @@ public class LionTest {
     @Test
     public void testTampilKarakter() {
         System.out.println("tampilKarakter");
-        Lion instance = null;
+        Lion instance = new Lion(1,1);
         instance.tampilKarakter();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,10 +56,10 @@ public class LionTest {
     @Test
     public void testBersuara() {
         System.out.println("bersuara");
-        Lion instance = null;
+        Lion instance = new Lion(1,1);
         instance.bersuara();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -68,10 +68,14 @@ public class LionTest {
     @Test
     public void testBerjalan() {
         System.out.println("berjalan");
-        Lion instance = null;
+        Lion instance = new Lion(1,1);
         instance.berjalan();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

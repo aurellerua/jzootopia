@@ -44,10 +44,10 @@ public class WhaleTest {
     @Test
     public void testTampilKarakter() {
         System.out.println("tampilKarakter");
-        Whale instance = null;
+        Whale instance = new Whale(1,1);
         instance.tampilKarakter();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,10 +56,10 @@ public class WhaleTest {
     @Test
     public void testBersuara() {
         System.out.println("bersuara");
-        Whale instance = null;
+        Whale instance = new Whale(1,1);
         instance.bersuara();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -68,10 +68,14 @@ public class WhaleTest {
     @Test
     public void testBerenang() {
         System.out.println("berenang");
-        Whale instance = null;
+        Whale instance = new Whale(1,1);
         instance.berenang();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
