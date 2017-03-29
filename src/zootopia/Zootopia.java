@@ -28,7 +28,7 @@ public class Zootopia {
         
         System.out.println("done");
         
-        Cage cageLand = new Cage(2,2,new Land());
+        Cage cageLand = new Cage(4,4,new Land());
         Cage cageWater = new Cage(2,1,new Water());
         Cage cageAir = new Cage(1,2,new Air());
         Park park = new Park();
@@ -38,20 +38,14 @@ public class Zootopia {
         //cageLand.addCage(new Land());
         //cageLand.printCage(cageLand);
 
-        
-        Zoo zoo = new Zoo(4,4,3);
+        Zoo zoo = new Zoo(2,2,3);
         zoo.assignCage(2,2,cageLand);
-        zoo.assignPark(4,4,park);
+        //zoo.addCell(4,4,road);
+        zoo.addCell(3,2);
+        zoo.assignPark(2,2,park);
         //zoo.assignRestaurant(2,4,restaurant);
-        //zoo.assignRoad(1,10,road);
+        //zoo.assignRoad(1,10,road);       
         zoo.printZoo();
-        
-//        Cage<Land> cageland = new Cage<Land>();
-
-//
-//        cageland.add(new Land());
-//        System.out.printf("Check land :%d\n\n", cageland.getCell());
-
     }
 }
     

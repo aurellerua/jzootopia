@@ -11,7 +11,7 @@ package zootopia;
  * @author Aurelia
  */
 public abstract class Animal {
-    
+    protected static int num_of_animals = 0;
     protected int beratBadan;
     protected char jenisMakanan;
     protected boolean isLiar;
@@ -20,6 +20,10 @@ public abstract class Animal {
     
     static float nbDaging = 0;
     static float nbSayur = 0;
+    
+    public Animal() {
+        num_of_animals++;
+    }
     
     public void addMakanan(char c) {
         if (c=='k') {
@@ -61,4 +65,7 @@ public abstract class Animal {
     public abstract void tampilKarakter();
     public abstract void bersuara();
     
+    public static int getNumOfAnimals() {
+        return num_of_animals;
+    }
 }

@@ -9,6 +9,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
+import java.io.InputStream;
 import javax.swing.ImageIcon;
 
 /**
@@ -21,6 +22,7 @@ public class MainFrame extends javax.swing.JFrame {
     Image newimg = image.getScaledInstance(800, 160,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
     
     ImageIcon imageIcon2 = new ImageIcon(newimg);  // transform it back
+    
     /**
      * Creates new form MainFrame
      */
@@ -167,4 +169,6 @@ public class MainFrame extends javax.swing.JFrame {
 
     return resizedImg;
 }
+    
+    
 }

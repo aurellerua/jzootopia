@@ -6,6 +6,7 @@
 package zootopia.ui;
 
 import java.awt.GridLayout;
+import java.awt.event.KeyEvent;
 import javax.swing.JLabel;
 import zootopia.Renderable;
 
@@ -116,4 +117,20 @@ public class TourFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+    
+    public void keyTyped(KeyEvent event) {
+        
+        if (event.getKeyCode() == KeyEvent.VK_UP) {
+            // navigasi atas
+        }
+        if (event.getKeyCode() == KeyEvent.VK_DOWN) {
+            // navigasi bawah
+        }
+        if (event.getKeyCode() == KeyEvent.VK_RIGHT) {
+            //navigasi kanan
+        }
+        if (event.getKeyCode() == KeyEvent.VK_LEFT) {
+            // navigasi kiri
+        }
+    }
 }

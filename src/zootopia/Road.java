@@ -12,6 +12,6 @@ package zootopia;
  */
 public class Road extends Cell {
     public Road() {
-        code = 'r';
+        code = ' ';
     }
 }

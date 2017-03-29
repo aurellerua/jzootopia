@@ -32,6 +32,7 @@ public class Zoo {
     private Park park;
     private Entrance entrance;
     private Exit exit;
+    private Pawn pawn;
 
     public Zoo(int x, int y, int num_of_cage)
     {
@@ -50,12 +51,15 @@ public class Zoo {
     }
     
     public void assignCage(int cage_bar, int cage_kol, Cage cage) {
-        //assert Cage <= num_of_cage;
+        Cell[][] temp;
+        temp = new Cell[x+1][];
+        System.arraycopy(cell, 0, temp, 0, x);
+        temp[x]= new Cell[]{};
+        
         for (int i=0; i<cage_bar; i++) {
             for (int j=0; j<cage_kol; j++) {
                 assert this.isEmpty(i,j);
-                cell[i][j] = cage.isiCage[i][j];
-                
+                cell[i][j] = cage.isiCage[i][j];                
             }
         }
     }
@@ -99,16 +103,29 @@ public class Zoo {
         return cell[i][j];
     }
     
-    public void addCell(int frag_bar, int frag_kol, Cell c) {
-        for (int i=0; i<frag_bar; i++) {
-            for (int j=0; j<frag_kol; j++) {
-                cell[i][j] = c;
-            }
+    public void addCell(int x, int y) {
+//        Cell[][] temp;
+//        temp = new Cell[x+1][y+1];
+//        int j = cell.length;
+//        for (int i=0; i<frag_bar; i++) {
+//            System.arraycopy(cell[i], 0, temp[i], 0, frag_kol);
+//
+//        }
+        Cell [][] new_cell = new Cell[x][y];
+        int new_x = Math.min(x, this.x);
+        int new_y = Math.min(y, this.y);
+        for (int i=0; i<new_y; i++) {
+            System.arraycopy(cell, y, new_cell, 0, new_y);
         }
+        cell = new_cell;
     }
     
     public boolean isEmpty(int i, int j) {
         return cell[i][j] == null;
+    }
+    
+    public Pawn getPawn() {
+        return pawn;
     }
     
     public void printZoo() {

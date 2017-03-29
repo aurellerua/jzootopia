@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="zootopia">
+  <ClassDiagramComponents>
+    <Class name="Air" package="zootopia" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Animal" package="zootopia" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="num_of_animals" type="int" visibility="protected" isStatic="true"/>
+        <Field name="beratBadan" type="int" visibility="protected"/>
+        <Field name="jenisMakanan" type="char" visibility="protected"/>
+        <Field name="isLiar" type="boolean" visibility="protected"/>
+        <Field name="lokasi" type="Point" visibility="protected"/>
+        <Field name="habitat" type="char[]" visibility="protected"/>
+        <Field name="nbDaging" type="float" visibility="package" isStatic="true"/>
+        <Field name="nbSayur" type="float" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addMakanan" returnType="void" visibility="public">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="getBeratBadan" returnType="int" visibility="public"/>
+        <Method name="getJenisMakanan" returnType="char" visibility="public"/>
+        <Method name="checkIsLiar" returnType="boolean" visibility="public"/>
+        <Method name="getLokasi" returnType="Point" visibility="public"/>
+        <Method name="isHabitat" returnType="boolean" visibility="public">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="getNbMakanan" returnType="float" visibility="public"/>
+        <Method name="tampilKarakter" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="bersuara" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="getNumOfAnimals" returnType="int" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Cage" package="zootopia" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="count_cage" type="int" visibility="private" isStatic="true"/>
+        <Field name="kol" type="int" visibility="private" isFinal="true"/>
+        <Field name="bar" type="int" visibility="private" isFinal="true"/>
+        <Field name="isiCage" type="Cell[][]" visibility="package" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="m"/>
+          <Argument type="int" name="n"/>
+          <Argument type="Cell" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addCage" returnType="void" visibility="public">
+          <Argument type="Cell" name="c"/>
+        </Method>
+        <Method name="getCageCell" returnType="Cell" visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="int" name="j"/>
+        </Method>
+        <Method name="getNumberOfCages" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="printCage" returnType="void" visibility="public">
+          <Argument type="Cage" name="cage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cell" package="zootopia" visibility="public" isAbstract="true" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="code" type="char" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCellCode" returnType="char" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cendrawasih" package="zootopia" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="terbang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cheetah" package="zootopia" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Crocodile" package="zootopia" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Dolphin" package="zootopia" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Dove" package="zootopia" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="terbang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Eagle" package="zootopia" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="terbang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Elephant" package="zootopia" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Entrance" package="zootopia" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Exit" package="zootopia" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FlyingAnimal" package="zootopia" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="berjalan" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="terbang" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Frog" package="zootopia" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Land" package="zootopia" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="LandAnimal" package="zootopia" visibility="public" isAbstract="true" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="berjalan" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="LandWaterAnimal" package="zootopia" visibility="public" isAbstract="true" xPosition="320.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="berjalan" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="berenang" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Lion" package="zootopia" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mountainlion" package="zootopia" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Panther" package="zootopia" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Park" package="zootopia" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Parrot" package="zootopia" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="terbang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pawn" package="zootopia" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Peacock" package="zootopia" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="terbang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Piranha" package="zootopia" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Point" package="zootopia" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="getY" returnType="int" visibility="public"/>
+        <Method name="setX" returnType="void" visibility="public">
+          <Argument type="int" name="newX"/>
+        </Method>
+        <Method name="setY" returnType="void" visibility="public">
+          <Argument type="int" name="newY"/>
+        </Method>
+        <Method name="move" returnType="void" visibility="public">
+          <Argument type="int" name="dx"/>
+          <Argument type="int" name="dy"/>
+        </Method>
+        <Method name="isEqual" returnType="boolean" visibility="public">
+          <Argument type="Point" name="P1"/>
+          <Argument type="Point" name="P2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Rayfish" package="zootopia" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Renderable" package="zootopia" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="printZoo" returnType="void" visibility="public"/>
+        <Method name="decode" returnType="char" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Restaurant" package="zootopia" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Road" package="zootopia" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Salamander" package="zootopia" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Shark" package="zootopia" visibility="public" xPosition="20.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Snake" package="zootopia" visibility="public" xPosition="320.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tiger" package="zootopia" visibility="public" xPosition="620.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berjalan" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DisplayFrame" package="zootopia.ui" visibility="public" xPosition="920.0" yPosition="1620.0">
+      <Fields>
+        <Field name="r" type="Renderable" visibility="package"/>
+        <Field name="experimentLayout" type="GridLayout" visibility="package"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainFrame" package="zootopia.ui" visibility="public" xPosition="1220.0" yPosition="1620.0">
+      <Fields>
+        <Field name="imageIcon" type="ImageIcon" visibility="package"/>
+        <Field name="image" type="Image" visibility="package"/>
+        <Field name="newimg" type="Image" visibility="package"/>
+        <Field name="imageIcon2" type="ImageIcon" visibility="package"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="displayClickedHandler" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="tourClickedHandler" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="getScaledImage" returnType="Image" visibility="private">
+          <Argument type="Image" name="srcImg"/>
+          <Argument type="int" name="w"/>
+          <Argument type="int" name="h"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TourFrame" package="zootopia.ui" visibility="public" xPosition="1520.0" yPosition="1620.0">
+      <Fields>
+        <Field name="r" type="Renderable" visibility="package"/>
+        <Field name="experimentLayout" type="GridLayout" visibility="package"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="keyTyped" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Water" package="zootopia" visibility="public" xPosition="1820.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="WaterAnimal" package="zootopia" visibility="public" isAbstract="true" xPosition="2120.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="berenang" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Whale" package="zootopia" visibility="public" xPosition="20.0" yPosition="2020.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="tampilKarakter" returnType="void" visibility="public"/>
+        <Method name="bersuara" returnType="void" visibility="public"/>
+        <Method name="berenang" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Zoo" package="zootopia" visibility="public" xPosition="320.0" yPosition="2020.0">
+      <Fields>
+        <Field name="frag_bar" type="int" visibility="private"/>
+        <Field name="frag_kol" type="int" visibility="private"/>
+        <Field name="x" type="int" visibility="private"/>
+        <Field name="y" type="int" visibility="private"/>
+        <Field name="num_of_cage" type="int" visibility="private"/>
+        <Field name="cage_bar" type="int" visibility="private"/>
+        <Field name="cage_kol" type="int" visibility="private"/>
+        <Field name="rest_bar" type="int" visibility="private"/>
+        <Field name="rest_kol" type="int" visibility="private"/>
+        <Field name="park_bar" type="int" visibility="private"/>
+        <Field name="park_kol" type="int" visibility="private"/>
+        <Field name="road_bar" type="int" visibility="private"/>
+        <Field name="road_kol" type="int" visibility="private"/>
+        <Field name="cell" type="Cell" visibility="private"/>
+        <Field name="c" type="Cell" visibility="private"/>
+        <Field name="cage" type="Cage" visibility="private"/>
+        <Field name="restaurant" type="Restaurant" visibility="private"/>
+        <Field name="park" type="Park" visibility="private"/>
+        <Field name="entrance" type="Entrance" visibility="private"/>
+        <Field name="exit" type="Exit" visibility="private"/>
+        <Field name="pawn" type="Pawn" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+          <Argument type="int" name="num_of_cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="assignCage" returnType="void" visibility="public">
+          <Argument type="int" name="cage_bar"/>
+          <Argument type="int" name="cage_kol"/>
+          <Argument type="Cage" name="cage"/>
+        </Method>
+        <Method name="assignRestaurant" returnType="void" visibility="public">
+          <Argument type="int" name="rest_bar"/>
+          <Argument type="int" name="rest_kol"/>
+          <Argument type="Restaurant" name="restaurant"/>
+        </Method>
+        <Method name="assignPark" returnType="void" visibility="public">
+          <Argument type="int" name="park_bar"/>
+          <Argument type="int" name="park_kol"/>
+          <Argument type="Park" name="park"/>
+        </Method>
+        <Method name="assignRoad" returnType="void" visibility="public">
+          <Argument type="int" name="road_bar"/>
+          <Argument type="int" name="road_kol"/>
+          <Argument type="Road" name="road"/>
+        </Method>
+        <Method name="getEntrance" returnType="Entrance" visibility="public"/>
+        <Method name="getExit" returnType="Exit" visibility="public"/>
+        <Method name="getCell" returnType="Cell" visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="int" name="j"/>
+        </Method>
+        <Method name="addCell" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+          <Argument type="int" name="y"/>
+        </Method>
+        <Method name="isEmpty" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+          <Argument type="int" name="j"/>
+        </Method>
+        <Method name="getPawn" returnType="Pawn" visibility="public"/>
+        <Method name="printZoo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Zootopia" package="zootopia" visibility="public" xPosition="620.0" yPosition="2020.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="zootopia.Piranha" target="zootopia.WaterAnimal"/>
+    <HasRelation name="cage" source="zootopia.Zoo" target="zootopia.Cage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Water" target="zootopia.Cell"/>
+    <IsRelation name="is" source="zootopia.Snake" target="zootopia.LandWaterAnimal"/>
+    <HasRelation name="r" source="zootopia.ui.DisplayFrame" target="zootopia.Renderable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Dolphin" target="zootopia.WaterAnimal"/>
+    <HasRelation name="lokasi" source="zootopia.Animal" target="zootopia.Point" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Cell" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="zootopia.Cage" target="zootopia.Cage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Crocodile" target="zootopia.LandWaterAnimal"/>
+    <IsRelation name="is" source="zootopia.Parrot" target="zootopia.FlyingAnimal"/>
+    <HasRelation name="park" source="zootopia.Zoo" target="zootopia.Park" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Frog" target="zootopia.LandWaterAnimal"/>
+    <IsRelation name="is" source="zootopia.Pawn" target="zootopia.Cell"/>
+    <HasRelation name="pawn" source="zootopia.Zoo" target="zootopia.Pawn" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Shark" target="zootopia.WaterAnimal"/>
+    <IsRelation name="is" source="zootopia.FlyingAnimal" target="zootopia.Animal"/>
+    <IsRelation name="is" source="zootopia.Air" target="zootopia.Cell"/>
+    <IsRelation name="is" source="zootopia.Rayfish" target="zootopia.WaterAnimal"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Cage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Eagle" target="zootopia.FlyingAnimal"/>
+    <IsRelation name="is" source="zootopia.Cheetah" target="zootopia.LandAnimal"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Exit" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="restaurant" source="zootopia.Zoo" target="zootopia.Restaurant" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Elephant" target="zootopia.LandAnimal"/>
+    <IsRelation name="is" source="zootopia.Lion" target="zootopia.LandAnimal"/>
+    <HasRelation name="entrance" source="zootopia.Zoo" target="zootopia.Entrance" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="exit" source="zootopia.Zoo" target="zootopia.Exit" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Dove" target="zootopia.FlyingAnimal"/>
+    <IsRelation name="is" source="zootopia.Land" target="zootopia.Cell"/>
+    <IsRelation name="is" source="zootopia.LandAnimal" target="zootopia.Animal"/>
+    <IsRelation name="is" source="zootopia.LandWaterAnimal" target="zootopia.Animal"/>
+    <IsRelation name="is" source="zootopia.Salamander" target="zootopia.LandWaterAnimal"/>
+    <UseRelation source="zootopia.Animal" target="zootopia.Point" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="r" source="zootopia.ui.TourFrame" target="zootopia.Renderable" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Mountainlion" target="zootopia.LandAnimal"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Park" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.WaterAnimal" target="zootopia.Animal"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Road" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="zootopia.Point" target="zootopia.Point" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Peacock" target="zootopia.FlyingAnimal"/>
+    <HasRelation name="cell" source="zootopia.Zoo" target="zootopia.Cell" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Road" target="zootopia.Cell"/>
+    <IsRelation name="is" source="zootopia.Park" target="zootopia.Cell"/>
+    <IsRelation name="is" source="zootopia.Entrance" target="zootopia.Road"/>
+    <IsRelation name="is" source="zootopia.Restaurant" target="zootopia.Cell"/>
+    <UseRelation source="zootopia.Cage" target="zootopia.Cell" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Restaurant" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Pawn" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Panther" target="zootopia.LandAnimal"/>
+    <UseRelation source="zootopia.Zoo" target="zootopia.Entrance" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="c" source="zootopia.Zoo" target="zootopia.Cell" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="zootopia.Exit" target="zootopia.Road"/>
+    <IsRelation name="is" source="zootopia.Tiger" target="zootopia.LandAnimal"/>
+    <IsRelation name="is" source="zootopia.Cendrawasih" target="zootopia.FlyingAnimal"/>
+    <IsRelation name="is" source="zootopia.Whale" target="zootopia.WaterAnimal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
