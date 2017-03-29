@@ -26,7 +26,7 @@ public abstract class FlyingAnimal extends Animal {
      */
     public abstract void berjalan();
     /**
-     * Bergerak di habitat air uang ditandai dengan 'a'.
+     * Bergerak di habitat air yang ditandai dengan 'a'.
      */
     public abstract void terbang();
 }
