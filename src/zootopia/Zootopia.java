@@ -50,7 +50,7 @@ public class Zootopia {
 
         Zoo zoo = new Zoo(2,2,3);    
         zoo.assignCage(2,2,cageLand);
-        zoo.extendZoo(2, 2, park);
+        //zoo.extendZoo(2, 2, park);
         //zoo.assignAnimal(1, 2, cageLand, c);
         //zoo.addCell(4,4,road);
         //zoo.addCell(3,2);

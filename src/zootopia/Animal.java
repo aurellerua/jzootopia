@@ -104,7 +104,6 @@ public abstract class Animal extends Cell {
     /**
      * Getter lokasi.
      * @return lokasi.
-     * @see Point.
      */
     public Point getLokasi() {
         return lokasi;
@@ -126,6 +125,7 @@ public abstract class Animal extends Cell {
     }
     /**
      * fungsi abstrak menampilkan karakter.
+     * @return char untuk menampilkan karakter
      */
     public abstract char tampilKarakter();
     /**

@@ -13,12 +13,26 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Cage {
-    private static int count_cage = 0;
+    /**
+     * menghitung cage yang tercipta.
+     */
+    private static int countCage = 0;
+    /**
+     * kolom dari Cage yang tercipta.
+     */
     private final int kol;
+    /**
+     * baris dari Cage yang tercipta.
+     */
     private final int bar;
-    final Cell[][] isiCage;
+    /**
+     * array dari cage.
+     */
+    private final Cell[][] isiCage;
+    /**
+     * penciptaan objek Animal.
+     */
     private Animal animal;
-    
     /**
      * Konstruktor dari kelas Cage.
      * <p>
@@ -27,62 +41,67 @@ public class Cage {
      * @param n banyak baris,
      * @param c isi sel
      */
-    public Cage(int m, int n, Cell c) {
+    public Cage(final int m, final int n, final Cell c) {
         kol = m;
         bar = n;
         isiCage = new Cell[bar][kol];
-        count_cage++;
-        for (int i=0; i<bar; i++) {
-            for (int j=0; j<kol; j++) {
+        countCage++;
+        for (int i = 0; i < bar; i++) {
+            for (int j = 0; j < kol; j++) {
                 isiCage[i][j] = c;
             }
         }
     }
     /**
-     * Menambah cage baru
+     * Menambah cage baru.
      * <p>
-     * @param c isi sel
+     * @param c isi sel.
      */
-    public void addCage(Cell c) {
-        for (int i=0; i<bar; i++) {
-            for (int j=0; j<kol; j++) {
+    public final void addCage(final Cell c) {
+        for (int i = 0; i < bar; i++) {
+            for (int j = 0; j < kol; j++) {
                 isiCage[i][j] = c;
             }
         }
     }
     /**
-     * Mengembalikan isi cage pada posisi tertentu
+     * Mengembalikan isi cage pada posisi tertentu.
      * <p>
      * @param i posisi baris
      * @param j posisi kolom
      * @return isi cell
      */
-    public Cell getCageCell(int i, int j) {
+    public final Cell getCageCell(final int i, final int j) {
         return isiCage[i][j];
     }
     /**
-     * Mengembalikan banyak cages yang dibuat
+     * Mengembalikan banyak cages yang dibuat.
      * <p>
-     * @return banyak cage yang dibuat
+     * @return banyak cage yang dibuat.
      */
     public static int getNumberOfCages() {
-        return count_cage;
+        return countCage;
     }
-    
-    public void assignAnimal(int i, int j, Cage cage, Animal animal){
+    /**
+     * assign animal ke dalam cage.
+     * @param i posisi horisontal animal.
+     * @param j posisi vertikal animal.
+     * @param cage cage tempat menampung animal.
+     * @param animal animal yang ditampung oleh cage.
+     */
+    public final void assignAnimal(int i, int j, Cage cage, Animal animal){
         isiCage[i][j] = animal;
     }
-    
     /**
-     * Mencetak cage ke layar
+     * Mencetak cage ke layar.
      * <p>
-     * @param cage cage yang akan dicetak
+     * @param cage cage yang akan dicetak.
      */
-    public void printCage(Cage cage) {
-        int i,j;
-        for (i=0; i<bar; i++) {
-            for (j=0; j<kol; j++) {                
-                System.out.print(getCageCell(i,j).getCellCode());
+    public final void printCage(final Cage cage) {
+        int i, j;
+        for (i = 0; i < bar; i++) {
+            for (j = 0; j < kol; j++) {        
+                System.out.print(getCageCell(i, j).getCellCode());
             }
             System.out.println();
         }
