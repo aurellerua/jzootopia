@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public class Entrance extends Road {
+    /**
+     * Konstruktor dari kelas Entrance.
+     * <p>
+     * Menciptakan pintu masuk.
+     */
     public Entrance() {
         code = 'e';
     }

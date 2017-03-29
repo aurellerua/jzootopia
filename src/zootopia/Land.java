@@ -12,6 +12,11 @@ package zootopia;
  */
 
 public class Land extends Cell {
+    /**
+     * Konstruktor dari kelas Land.
+     * <p>
+     * Menciptakan terrain darat (land).
+     */
     public Land() {
         code = 'l';
     }

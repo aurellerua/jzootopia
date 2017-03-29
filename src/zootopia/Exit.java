@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public class Exit extends Road {
+    /**
+     * Konstruktor dari kelas Exit.
+     * <p>
+     * Menandai pintu keluar.
+     */
     public Exit() {
         code = 'x';
     }
