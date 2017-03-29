@@ -11,7 +11,11 @@ package zootopia;
  * @author Thea Olivia
  */
 public class Renderable {
-
+    /**
+     * Konstruktor dari kelas Renderable.
+     * <p>
+     * Menciptakan sebuah renderable.
+     */
     public Renderable() {
         
     }
