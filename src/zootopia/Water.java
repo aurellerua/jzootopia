@@ -11,6 +11,11 @@ package zootopia;
  * @author theaolivia
  */
 public class Water extends Cell {
+    /**
+     * Konstruktor dari kelas Water.
+     * <p>
+     * Menciptakan terrain air (water).
+     */
     public Water() {
         code = 'w';
     }

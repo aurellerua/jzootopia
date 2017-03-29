@@ -11,6 +11,11 @@ package zootopia;
  * @author theaolivia
  */
 public class Air extends Cell {
+    /**
+     * Konstruktor dari kelas Air.
+     * <p>
+     * Menciptakan terrain udara (Air).
+     */
     public Air() {
         code = 'a';
     }

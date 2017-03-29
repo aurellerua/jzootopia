@@ -11,6 +11,11 @@ package zootopia;
  * @author Aurelia
  */
 public class Restaurant extends Cell {
+    /**
+     * Konstruktor dari kelas Restaurant.
+     * <p>
+     * Menciptakan terrain restaurant.
+     */
     public Restaurant() {
         code = 't';
     }
