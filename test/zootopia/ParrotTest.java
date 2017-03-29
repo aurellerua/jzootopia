@@ -44,10 +44,10 @@ public class ParrotTest {
     @Test
     public void testTampilKarakter() {
         System.out.println("tampilKarakter");
-        Parrot instance = null;
+        Parrot instance = new Parrot(1,1);
         instance.tampilKarakter();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,10 +56,10 @@ public class ParrotTest {
     @Test
     public void testBersuara() {
         System.out.println("bersuara");
-        Parrot instance = null;
+        Parrot instance = new Parrot(1,1);
         instance.bersuara();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -68,10 +68,14 @@ public class ParrotTest {
     @Test
     public void testBerjalan() {
         System.out.println("berjalan");
-        Parrot instance = null;
+        Parrot instance = new Parrot(1,1);
         instance.berjalan();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -80,10 +84,14 @@ public class ParrotTest {
     @Test
     public void testTerbang() {
         System.out.println("terbang");
-        Parrot instance = null;
+        Parrot instance = new Parrot(1,1);
         instance.terbang();
+        int expRes = 2;
+        int res = instance.getLokasi().getX();
+        assertEquals(expRes, res);
+        System.out.println("new location (x): " + res);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

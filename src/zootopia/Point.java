@@ -51,16 +51,18 @@ class Point {
     }
     
     public void move(int dx, int dy) {
-        if (x+dx>3)
-            x=x-(3-dx);
-        else
-            x+=dx;
-        assert x>3;
-        if (y+dy>3)
-            y=y-(3-dy);
-        else
-            y+=dy;
-        assert y>3;
+//        if (x+dx>3)
+//            x=x-(3-dx);
+//        else
+//            x+=dx;
+//        assert x>3;
+//        if (y+dy>3)
+//            y=y-(3-dy);
+//        else
+//            y+=dy;
+//        assert y>3;
+        x += dx;
+        y += dy;
     }
     
     public boolean isEqual(Point P1, Point P2) {
