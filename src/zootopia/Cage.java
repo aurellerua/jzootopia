@@ -17,6 +17,7 @@ public class Cage {
     private final int kol;
     private final int bar;
     final Cell[][] isiCage;
+    private Animal animal;
     
     public Cage(int m, int n, Cell c) {
         kol = m;
@@ -44,6 +45,10 @@ public class Cage {
     
     public static int getNumberOfCages() {
         return count_cage;
+    }
+    
+    public void assignAnimal(int i, int j, Cage cage, Animal animal){
+        isiCage[i][j] = animal;
     }
     
     public void printCage(Cage cage) {

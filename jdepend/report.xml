@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.awt">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.awt.event">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.awt.image">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.logging">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.swing">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="zootopia">
+            <Stats>
+                <TotalClasses>41</TotalClasses>
+                <ConcreteClasses>34</ConcreteClasses>
+                <AbstractClasses>7</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>2</Ce>
+                <A>0.17</A>
+                <I>0.67</I>
+                <D>0.16</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Animal.java">
+                    zootopia.Animal
+                </Class>
+                <Class sourceFile="Cell.java">
+                    zootopia.Cell
+                </Class>
+                <Class sourceFile="CellValue.java">
+                    zootopia.CellValue
+                </Class>
+                <Class sourceFile="FlyingAnimal.java">
+                    zootopia.FlyingAnimal
+                </Class>
+                <Class sourceFile="LandAnimal.java">
+                    zootopia.LandAnimal
+                </Class>
+                <Class sourceFile="LandWaterAnimal.java">
+                    zootopia.LandWaterAnimal
+                </Class>
+                <Class sourceFile="WaterAnimal.java">
+                    zootopia.WaterAnimal
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Air.java">
+                    zootopia.Air
+                </Class>
+                <Class sourceFile="Cage.java">
+                    zootopia.Cage
+                </Class>
+                <Class sourceFile="Cendrawasih.java">
+                    zootopia.Cendrawasih
+                </Class>
+                <Class sourceFile="Cheetah.java">
+                    zootopia.Cheetah
+                </Class>
+                <Class sourceFile="Crocodile.java">
+                    zootopia.Crocodile
+                </Class>
+                <Class sourceFile="Dolphin.java">
+                    zootopia.Dolphin
+                </Class>
+                <Class sourceFile="Dove.java">
+                    zootopia.Dove
+                </Class>
+                <Class sourceFile="Eagle.java">
+                    zootopia.Eagle
+                </Class>
+                <Class sourceFile="Elephant.java">
+                    zootopia.Elephant
+                </Class>
+                <Class sourceFile="Entrance.java">
+                    zootopia.Entrance
+                </Class>
+                <Class sourceFile="Exit.java">
+                    zootopia.Exit
+                </Class>
+                <Class sourceFile="Frog.java">
+                    zootopia.Frog
+                </Class>
+                <Class sourceFile="Land.java">
+                    zootopia.Land
+                </Class>
+                <Class sourceFile="Lion.java">
+                    zootopia.Lion
+                </Class>
+                <Class sourceFile="Mountainlion.java">
+                    zootopia.Mountainlion
+                </Class>
+                <Class sourceFile="Panther.java">
+                    zootopia.Panther
+                </Class>
+                <Class sourceFile="Park.java">
+                    zootopia.Park
+                </Class>
+                <Class sourceFile="Parrot.java">
+                    zootopia.Parrot
+                </Class>
+                <Class sourceFile="Pawn.java">
+                    zootopia.Pawn
+                </Class>
+                <Class sourceFile="Peacock.java">
+                    zootopia.Peacock
+                </Class>
+                <Class sourceFile="Piranha.java">
+                    zootopia.Piranha
+                </Class>
+                <Class sourceFile="Point.java">
+                    zootopia.Point
+                </Class>
+                <Class sourceFile="Rayfish.java">
+                    zootopia.Rayfish
+                </Class>
+                <Class sourceFile="Renderable.java">
+                    zootopia.Renderable
+                </Class>
+                <Class sourceFile="Restaurant.java">
+                    zootopia.Restaurant
+                </Class>
+                <Class sourceFile="Road.java">
+                    zootopia.Road
+                </Class>
+                <Class sourceFile="Salamander.java">
+                    zootopia.Salamander
+                </Class>
+                <Class sourceFile="Shark.java">
+                    zootopia.Shark
+                </Class>
+                <Class sourceFile="Snake.java">
+                    zootopia.Snake
+                </Class>
+                <Class sourceFile="Tiger.java">
+                    zootopia.Tiger
+                </Class>
+                <Class sourceFile="Water.java">
+                    zootopia.Water
+                </Class>
+                <Class sourceFile="Whale.java">
+                    zootopia.Whale
+                </Class>
+                <Class sourceFile="Zoo.java">
+                    zootopia.Zoo
+                </Class>
+                <Class sourceFile="Zootopia.java">
+                    zootopia.Zootopia
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>zootopia.ui</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="zootopia.ui">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>8</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DisplayFrame.java">
+                    zootopia.ui.DisplayFrame
+                </Class>
+                <Class sourceFile="DisplayFrame.java">
+                    zootopia.ui.DisplayFrame$1
+                </Class>
+                <Class sourceFile="MainFrame.java">
+                    zootopia.ui.MainFrame
+                </Class>
+                <Class sourceFile="MainFrame.java">
+                    zootopia.ui.MainFrame$1
+                </Class>
+                <Class sourceFile="MainFrame.java">
+                    zootopia.ui.MainFrame$2
+                </Class>
+                <Class sourceFile="MainFrame.java">
+                    zootopia.ui.MainFrame$3
+                </Class>
+                <Class sourceFile="TourFrame.java">
+                    zootopia.ui.TourFrame
+                </Class>
+                <Class sourceFile="TourFrame.java">
+                    zootopia.ui.TourFrame$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.awt</Package>
+                <Package>java.awt.event</Package>
+                <Package>java.awt.image</Package>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>java.util.logging</Package>
+                <Package>javax.swing</Package>
+                <Package>zootopia</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>

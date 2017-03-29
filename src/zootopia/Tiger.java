@@ -19,11 +19,12 @@ public class Tiger extends LandAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'T';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("T");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

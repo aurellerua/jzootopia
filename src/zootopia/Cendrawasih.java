@@ -19,11 +19,12 @@ public class Cendrawasih extends FlyingAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'C';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("C");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

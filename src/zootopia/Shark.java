@@ -19,11 +19,12 @@ public class Shark extends WaterAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'Y';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("Y");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

@@ -19,11 +19,12 @@ public class Cheetah extends LandAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'H';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("H");
+    public char tampilKarakter() {
+       return code;
     }
 
     @Override

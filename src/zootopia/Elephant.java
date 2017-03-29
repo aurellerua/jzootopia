@@ -19,11 +19,12 @@ public class Elephant extends LandAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'L';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("L");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

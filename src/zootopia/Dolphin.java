@@ -19,11 +19,12 @@ public class Dolphin extends WaterAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'I';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("I");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

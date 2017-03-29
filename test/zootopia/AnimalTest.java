@@ -174,7 +174,8 @@ public class AnimalTest {
 
     public class AnimalImpl extends Animal {
 
-        public void tampilKarakter() {
+        public char tampilKarakter() {
+            return code;
         }
 
         public void bersuara() {

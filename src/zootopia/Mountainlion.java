@@ -19,11 +19,12 @@ public class Mountainlion extends LandAnimal {
         isLiar = true;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'M';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("M");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

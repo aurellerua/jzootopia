@@ -19,11 +19,12 @@ public class Parrot extends FlyingAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'A';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("A");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

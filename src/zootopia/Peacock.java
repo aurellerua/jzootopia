@@ -18,12 +18,12 @@ public class Peacock extends FlyingAnimal {
         jenisMakanan = 'o';
         isLiar = false;
         lokasi = new Point(x,y);
-        addMakanan(jenisMakanan);
+        code = 'P';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("P");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override

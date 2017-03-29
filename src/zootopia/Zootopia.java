@@ -37,7 +37,8 @@ public class Zootopia {
         /* 
          *  Create cages from respective habitat
          */
-        Cage cageLand = new Cage(4,4,new Land());
+        Cage cageLand = new Cage(2,2,new Land());
+        //cageLand.assignAnimal(1, 2, cageLand, c);
         Cage cageWater = new Cage(2,1,new Water());
         Cage cageAir = new Cage(1,2,new Air());
         Park park = new Park();
@@ -47,11 +48,13 @@ public class Zootopia {
         //cageLand.addCage(new Land());
         //cageLand.printCage(cageLand);
 
-        Zoo zoo = new Zoo(2,2,3);
+        Zoo zoo = new Zoo(2,2,3);    
         zoo.assignCage(2,2,cageLand);
+        zoo.extendZoo(2, 2, park);
+        //zoo.assignAnimal(1, 2, cageLand, c);
         //zoo.addCell(4,4,road);
-        zoo.addCell(3,2);
-        zoo.assignPark(2,2,park);
+        //zoo.addCell(3,2);
+        //zoo.assignPark(2,2,park);
         //zoo.assignRestaurant(2,4,restaurant);
         //zoo.assignRoad(1,10,road);       
         zoo.printZoo();

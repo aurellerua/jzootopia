@@ -19,11 +19,12 @@ public class Rayfish extends WaterAnimal {
         isLiar = false;
         lokasi = new Point(x,y);
         addMakanan(jenisMakanan);
+        code = 'X';
     }
 
     @Override
-    public void tampilKarakter() {
-        System.out.println("X");
+    public char tampilKarakter() {
+        return code;
     }
 
     @Override
