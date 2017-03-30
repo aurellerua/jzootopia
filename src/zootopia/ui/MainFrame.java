@@ -172,15 +172,15 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     private void makeZoo() {
+        // hard coded
         Cell cell = new Land();
         Cage cage = new Cage(3,3,cell);
         zoo.assignCage(3,3,cage);
-        //System.out.println(zoo.getCell(3,3));
         Park park = new Park();
         zoo.assignPark(4,2,3,5,park);
         zoo.assignPark(2,4,7,7,park);
         Restaurant restaurant = new Restaurant();
-        zoo.assignRestaurant(2,2,9,9,restaurant);
+        zoo.assignRestaurant(2,2,10,9,restaurant);
         zoo.printZoo();
     }
 
