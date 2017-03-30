@@ -117,11 +117,11 @@ public class Zoo {
       * @param  restKol kolom maksimal restaurant
       * @see         Zoo
       */
-    public void assignRestaurant(int restBar, int restKol, Restaurant restaurant) {
+    public void assignRestaurant(int restBar, int restKol, int x, int y, Restaurant restaurant) {
         for (int i = 0; i < restBar; i++) {
             for (int j = 0; j < restKol; j++) {
-                assert this.isEmpty(i, j);
-                cell[i][j] = restaurant;
+                assert this.isEmpty(i+x-1, j+y-1);
+                cell[i+x-1][j+y-1] = restaurant;
             }
         }  
     }
@@ -133,11 +133,11 @@ public class Zoo {
       * @param  parkKol kolom maksimal park
       * @see         Zoo
       */
-    public void assignPark(int parkBar, int parkKol, Park park) {  
+    public void assignPark(int parkBar, int parkKol, int x, int y, Park park) {  
         for (int i = 0; i < parkBar; i++) {
             for (int j = 0; j < parkKol; j++) {
-                assert this.isEmpty(i, j);
-                cell[i][j] = park;        
+                assert this.isEmpty(i+x-1, j+y-1);
+                cell[i+x-1][j+y-1] = park;        
             }
         }
     }
@@ -156,6 +156,14 @@ public class Zoo {
                 cell[i][j] = road;
             }
         }
+    }
+    
+    public int getRow() {
+        return x;
+    }
+    
+    public int getCol() {
+        return y;
     }
     
     public Entrance getEntrance() {
@@ -246,7 +254,10 @@ public class Zoo {
     public void printZoo() {
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
-                System.out.print(getCell(i, j).getCellCode());
+                if (!isEmpty(i,j))
+                    System.out.print(getCell(i, j).getCellCode());
+                else
+                    System.out.print(" ");
             }
             System.out.println();
         }

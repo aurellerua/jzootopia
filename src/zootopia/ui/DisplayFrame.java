@@ -7,14 +7,14 @@ package zootopia.ui;
 
 import java.awt.*;
 import javax.swing.*;
-import zootopia.Renderable;
+import zootopia.*;
+import static zootopia.ui.MainFrame.zoo;
 
 /**
  *
  * @author theaolivia
  */
 public class DisplayFrame extends javax.swing.JFrame {
-    Renderable r = new Renderable();
     GridLayout experimentLayout = new GridLayout(12,16,0,0);
     
     /**
@@ -22,13 +22,16 @@ public class DisplayFrame extends javax.swing.JFrame {
      */
     public DisplayFrame() {
         initComponents();
-        r.printZoo();
         jPanel1.setLayout(experimentLayout);
         
         // isi sesuai dengan map
-        for (int i = 0; i < 12; i++) // rows
-            for (int j = 0; j < 16; j++) // columns
-                jPanel1.add(new JLabel("X",JLabel.CENTER));
+        for (int i = 0; i < zoo.getRow(); i++) // rows
+            for (int j = 0; j < zoo.getCol(); j++){ // columns 
+                if (zoo.isEmpty(i, j))
+                    jPanel1.add(new JLabel(" ",JLabel.CENTER));
+                else
+                    jPanel1.add(new JLabel(Character.toString(zoo.getCell(i, j).getCellCode()),JLabel.CENTER));
+            }
     }
 
     /**
